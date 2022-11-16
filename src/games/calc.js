@@ -27,8 +27,7 @@ const gameData = () => {
   const number1 = getRandomNumber(1, 31);
   const number2 = getRandomNumber(1, 31);
   const question = `${number1} ${operator} ${number2}`;
-  // const correctAnswer = `${calcEquation(number1, number2, operator)}`;
-  const correctAnswer = String(calcEquation(number1, number2, operator));
+  const correctAnswer = `${calcEquation(number1, number2, operator)}`;
 
   return [question, correctAnswer];
 };

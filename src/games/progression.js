@@ -18,8 +18,8 @@ const progression = (firstNum, step, arrLength) => {
   const element = progressionArr[index];
 
   for (let i = 0; i <= progressionArr.length; i += 1) {
-    if (progressionArr[index] === element) {
-      progressionArr[index] = "..";
+    if (progressionArr[i] === element) {
+      progressionArr[i] = "..";
     }
   }
 
