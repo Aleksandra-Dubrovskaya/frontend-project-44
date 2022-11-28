@@ -8,20 +8,20 @@
 
 ### brain-even asciinema:
 
-<script id="asciicast-538235" src="https://asciinema.org/a/538235.js" async></script>
+<a href="https://asciinema.org/a/538235" target="_blank"><img src="https://asciinema.org/a/538235.svg" /></a>
 
 ### brain-calc asciinema:
 
-https://asciinema.org/a/B1jboc23q7vJ7Gxy7rkscJOTd
+<a href="https://asciinema.org/a/B1jboc23q7vJ7Gxy7rkscJOTd" target="_blank"><img src="https://asciinema.org/a/B1jboc23q7vJ7Gxy7rkscJOTd.svg" /></a>
 
 ### brain-gcd asciinema:
 
-https://asciinema.org/a/l55kGQfl8Ee7cxNB5F3XdQU6P
+<a href="https://asciinema.org/a/l55kGQfl8Ee7cxNB5F3XdQU6P" target="_blank"><img src="https://asciinema.org/a/l55kGQfl8Ee7cxNB5F3XdQU6P.svg" /></a>
 
 ### brain-progression asciinema:
 
-https://asciinema.org/a/9Mbc1vDrP7Ps0gEaonNhvjFn2
+<a href="https://asciinema.org/a/9Mbc1vDrP7Ps0gEaonNhvjFn2" target="_blank"><img src="https://asciinema.org/a/9Mbc1vDrP7Ps0gEaonNhvjFn2.svg" /></a>
 
 ### brain-prime asciinema:
 
-https://asciinema.org/a/6kEHHOjYEAv5Wp3oXzq6FdtHs
+<a href="https://asciinema.org/a/6kEHHOjYEAv5Wp3oXzq6FdtHs" target="_blank"><img src="https://asciinema.org/a/6kEHHOjYEAv5Wp3oXzq6FdtHs.svg" /></a>
