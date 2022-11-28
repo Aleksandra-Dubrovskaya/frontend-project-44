@@ -8,7 +8,7 @@
 
 ### brain-even asciinema:
 
-https://asciinema.org/a/Ncn5bhjjV3mDvIexAQwPFnQ2A
+<script id="asciicast-538235" src="https://asciinema.org/a/538235.js" async></script>
 
 ### brain-calc asciinema:
 

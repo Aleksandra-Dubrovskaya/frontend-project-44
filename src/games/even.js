@@ -1,5 +1,5 @@
-import getRandomNumber from "../getRandomNumber.js";
-import gameLogic from "../index.js";
+import getRandomNumber from '../getRandomNumber.js';
+import gameLogic from '../index.js';
 
 // задаем правила игры
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -8,7 +8,7 @@ const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (num) => num % 2 === 0;
 
 const sayEvenOrNot = (num) => {
-  const text = isEven(num) ? "yes" : "no";
+  const text = isEven(num) ? 'yes' : 'no';
   return text;
 };
 

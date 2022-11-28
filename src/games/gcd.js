@@ -1,7 +1,7 @@
-import getRandomNumber from "../getRandomNumber.js";
-import gameLogic from "../index.js";
+import getRandomNumber from '../getRandomNumber.js';
+import gameLogic from '../index.js';
 
-const gameRules = "Find the greatest common divisor of given numbers.";
+const gameRules = 'Find the greatest common divisor of given numbers.';
 
 // функция получения наибольшего общего делителя
 const gcd = (num1, num2) => {

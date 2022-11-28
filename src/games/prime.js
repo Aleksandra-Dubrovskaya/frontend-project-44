@@ -1,8 +1,7 @@
-import getRandomNumber from "../getRandomNumber.js";
-import gameLogic from "../index.js";
+import getRandomNumber from '../getRandomNumber.js';
+import gameLogic from '../index.js';
 
-const gameRules =
-  'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 // функция проверки простое ли число
 const isPrime = (num) => {
@@ -19,7 +18,7 @@ const isPrime = (num) => {
 };
 
 const sayPrimeOrNot = (num) => {
-  const text = isPrime(num) ? "yes" : "no";
+  const text = isPrime(num) ? 'yes' : 'no';
   return text;
 };
 

@@ -1,7 +1,7 @@
-import getRandomNumber from "../getRandomNumber.js";
-import gameLogic from "../index.js";
+import getRandomNumber from '../getRandomNumber.js';
+import gameLogic from '../index.js';
 
-const gameRules = "What number is missing in the progression?";
+const gameRules = 'What number is missing in the progression?';
 
 // функция для получения прогрессии и правильного ответа
 const progression = (firstNum, step, arrLength) => {
@@ -19,7 +19,7 @@ const progression = (firstNum, step, arrLength) => {
 
   for (let i = 0; i <= progressionArr.length; i += 1) {
     if (progressionArr[i] === element) {
-      progressionArr[i] = "..";
+      progressionArr[i] = '..';
     }
   }
 
@@ -31,7 +31,7 @@ const gameData = () => {
   const step = getRandomNumber(2, 10);
   const arrLength = getRandomNumber(5, 10);
   const [progressionArr, element] = progression(firstNum, step, arrLength);
-  const question = progressionArr.join(" ");
+  const question = progressionArr.join(' ');
   const correctAnswer = `${element}`;
 
   return [question, correctAnswer];
