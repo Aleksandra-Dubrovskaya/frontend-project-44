@@ -4,6 +4,29 @@
 
 <a href="https://codeclimate.com/github/Aleksandra-Dubrovskaya/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/17be00b904e6a98bdc69/maintainability" /></a>
 
+# Description:
+
+This repository contains the implementation of 5 console games. You can win by successfully answering 3 questions in a row in the selected game.
+
+# Setup:
+
+_*Before running the games, follow these steps in the command line:*_
+
+- Check your current _Node.js_ version: `node --version`
+- Upgrade _Node.js_ in case if your current version is lower than _222_: `apt upgrade nodejs`
+- Install npm package: `apt install npm`
+- Clone this repository by _SSH key_: `git@github.com:Aleksandra-Dubrovskaya/frontend-project-44.git`
+- Add dependencies: `make install`
+
+_*To run the game, enter the name of the selected game in the command line:*_
+
+1. `brain-games` - game with introduction
+2. `brain-even` - check a number for evenness
+3. `brain-calc` - calculate simple expressions
+4. `brain-gcd` - calculate the greatest common divisor of 2 numbers
+5. `brain-prime` - check a number for primality
+6. `brain-progression` - calculate and enter missing number from progression
+
 # Game overview:
 
 ### brain-even asciinema:
