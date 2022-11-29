@@ -1,17 +1,15 @@
 import readlineSync from 'readline-sync';
 
-// задаем число раундов игры
 const roundsCount = 3;
 
-// функция общей логики
-const gameLogic = (rules, data) => {
+const generateGame = (gameRule, getGameData) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log(rules);
+  console.log(gameRule);
 
   for (let i = 1; i <= roundsCount; i += 1) {
-    const [question, correctAnswer] = data();
+    const [question, correctAnswer] = getGameData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
@@ -25,4 +23,4 @@ const gameLogic = (rules, data) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default gameLogic;
+export default generateGame;

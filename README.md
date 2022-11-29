@@ -10,21 +10,21 @@ This repository contains the implementation of 5 console games. You can win by s
 
 # Setup:
 
-*_Before running the games, follow these steps in the command line:_*
+**_Before running the games, follow these steps in the command line:_**
 
-- Install *Node.js* package: `apt install nodejs`
-- Upgrade *Node.js* to the latest version: `apt upgrade nodejs`
+- Install **Node.js** package: `apt install nodejs`
+- Upgrade **Node.js** to the latest version: `apt upgrade nodejs`
 - Install npm package: `apt install npm`
-- Clone this repository by *SSH key*: `git@github.com:Aleksandra-Dubrovskaya/frontend-project-44.git`
+- Clone this repository by **SSH key**: `git@github.com:Aleksandra-Dubrovskaya/frontend-project-44.git`
 - Go to the directory of the cloned repository and add dependencies: `make install`
 
-*_To run the game, enter the name of the selected game in the command line:_*
+**_To run the game, enter the name of the selected game in the command line:_**
 
-1. `brain-even` - check a number for evenness
-2. `brain-calc` - calculate simple expressions
+1. `brain-even` - check a number for parity
+2. `brain-calc` - calculate expressions
 3. `brain-gcd` - calculate the greatest common divisor of 2 numbers
-4. `brain-prime` - check a number for primality
-5. `brain-progression` - calculate and enter missing number from progression
+4. `brain-prime` - check if a number is prime
+5. `brain-progression` - calculate the missing number in the progression
 
 # Game overview:
 

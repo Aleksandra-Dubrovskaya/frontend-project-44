@@ -1,14 +1,11 @@
 import getRandomNumber from '../getRandomNumber.js';
-import gameLogic from '../index.js';
+import generateGame from '../index.js';
 
-// задаем правила игры
 const gameRules = 'What is the result of the expression?';
 
-// функция получения знака математической операции
 const operators = ['+', '-', '*'];
 const getRandomOperator = (arr) => arr[getRandomNumber(0, arr.length - 1)];
 
-// функция вычисления уравнения
 const calcEquation = (num1, num2, operator) => {
   switch (operator) {
     case '+':
@@ -18,11 +15,11 @@ const calcEquation = (num1, num2, operator) => {
     case '*':
       return num1 * num2;
     default:
-      return null;
+      throw new Error(`Unknown operator: '${operator}'!`);
   }
 };
 
-const gameData = () => {
+const getGameData = () => {
   const operator = getRandomOperator(operators);
   const number1 = getRandomNumber(1, 31);
   const number2 = getRandomNumber(1, 31);
@@ -32,6 +29,6 @@ const gameData = () => {
   return [question, correctAnswer];
 };
 
-const calcGame = () => gameLogic(gameRules, gameData);
+const runCalcGame = () => generateGame(gameRules, getGameData);
 
-export default calcGame;
+export default runCalcGame;

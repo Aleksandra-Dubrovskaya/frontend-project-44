@@ -1,10 +1,9 @@
 import getRandomNumber from '../getRandomNumber.js';
-import gameLogic from '../index.js';
+import generateGame from '../index.js';
 
 const gameRules = 'What number is missing in the progression?';
 
-// функция для получения прогрессии и правильного ответа
-const progression = (firstNum, step, arrLength) => {
+const generateProgression = (firstNum, step, arrLength) => {
   const progressionArr = [];
   let prev = firstNum;
 
@@ -14,29 +13,23 @@ const progression = (firstNum, step, arrLength) => {
     prev = current;
   }
 
-  const index = getRandomNumber(0, progressionArr.length - 1);
-  const element = progressionArr[index];
-
-  for (let i = 0; i <= progressionArr.length; i += 1) {
-    if (progressionArr[i] === element) {
-      progressionArr[i] = '..';
-    }
-  }
-
-  return [progressionArr, element];
+  return progressionArr;
 };
 
-const gameData = () => {
+const getGameData = () => {
   const firstNum = getRandomNumber(1, 50);
   const step = getRandomNumber(2, 10);
   const arrLength = getRandomNumber(5, 10);
-  const [progressionArr, element] = progression(firstNum, step, arrLength);
-  const question = progressionArr.join(' ');
-  const correctAnswer = `${element}`;
+  const progression = generateProgression(firstNum, step, arrLength);
+  const randomIndex = getRandomNumber(0, progression.length - 1);
+
+  const correctAnswer = `${progression[randomIndex]}`;
+  progression[randomIndex] = '..';
+  const question = progression.join(' ');
 
   return [question, correctAnswer];
 };
 
-const progressionGame = () => gameLogic(gameRules, gameData);
+const runProgressionGame = () => generateGame(gameRules, getGameData);
 
-export default progressionGame;
+export default runProgressionGame;
