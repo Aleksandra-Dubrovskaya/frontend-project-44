@@ -1,5 +1,5 @@
 import getRandomNumber from '../getRandomNumber.js';
-import generateGame from '../index.js';
+import buildGame from '../index.js';
 
 const gameRules = 'What number is missing in the progression?';
 
@@ -17,9 +17,12 @@ const generateProgression = (firstNum, step, arrLength) => {
 };
 
 const getGameData = () => {
-  const firstNum = getRandomNumber(1, 50);
-  const step = getRandomNumber(2, 10);
-  const arrLength = getRandomNumber(5, 10);
+  const firstNum = getRandomNumber();
+  let minValue = 2;
+  const maxValue = 10;
+  const step = getRandomNumber(minValue, maxValue);
+  minValue = 5;
+  const arrLength = getRandomNumber(minValue, maxValue);
   const progression = generateProgression(firstNum, step, arrLength);
   const randomIndex = getRandomNumber(0, progression.length - 1);
 
@@ -30,6 +33,6 @@ const getGameData = () => {
   return [question, correctAnswer];
 };
 
-const runProgressionGame = () => generateGame(gameRules, getGameData);
+const runProgressionGame = () => buildGame(gameRules, getGameData);
 
 export default runProgressionGame;

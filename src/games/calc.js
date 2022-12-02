@@ -1,5 +1,5 @@
 import getRandomNumber from '../getRandomNumber.js';
-import generateGame from '../index.js';
+import buildGame from '../index.js';
 
 const gameRules = 'What is the result of the expression?';
 
@@ -21,14 +21,16 @@ const calcEquation = (num1, num2, operator) => {
 
 const getGameData = () => {
   const operator = getRandomOperator(operators);
-  const number1 = getRandomNumber(1, 31);
-  const number2 = getRandomNumber(1, 31);
+  const minValue = 1;
+  const maxValue = 31;
+  const number1 = getRandomNumber(minValue, maxValue);
+  const number2 = getRandomNumber(minValue, maxValue);
   const question = `${number1} ${operator} ${number2}`;
   const correctAnswer = `${calcEquation(number1, number2, operator)}`;
 
   return [question, correctAnswer];
 };
 
-const runCalcGame = () => generateGame(gameRules, getGameData);
+const runCalcGame = () => buildGame(gameRules, getGameData);
 
 export default runCalcGame;

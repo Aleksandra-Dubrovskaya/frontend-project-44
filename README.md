@@ -6,6 +6,8 @@
 
 # Description:
 
+Project name: **Mind games**
+
 This repository contains the implementation of 5 console games. You can win by successfully answering 3 questions in a row in the selected game.
 
 # Setup:
@@ -26,7 +28,7 @@ This repository contains the implementation of 5 console games. You can win by s
 4. `brain-prime` - check if a number is prime
 5. `brain-progression` - calculate the missing number in the progression
 
-# Game overview:
+# Games overview:
 
 ### brain-even asciinema:
 
